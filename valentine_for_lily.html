@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Fares">
+    <title>Happy Valentine's Day, Lily!</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fef3f3;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #e91e63;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #e91e63;
+            padding: 30px 0;
+            color: white;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        /* Main Content */
+        .content {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .message {
+            font-size: 1.5em;
+            color: #555;
+            margin: 20px 0;
+        }
+
+        /* Interactive Button */
+        .cta-button {
+            background-color: #ff4081;
+            border: none;
+            padding: 15px 30px;
+            color: white;
+            font-size: 1.2em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #e91e63;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #e91e63;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 1.1em;
+            margin-top: 50px;
+        }
+
+        /* Small Animation */
+        @keyframes heart {
+            0% {
+                transform: scale(1);
+                opacity: 0.8;
+            }
+            50% {
+                transform: scale(1.2);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 0.8;
+            }
+        }
+
+        .heart-icon {
+            font-size: 2em;
+            color: #ff4081;
+            animation: heart 1s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Happy Valentine's Day, Lily!</h1>
+</header>
+
+<div class="content">
+    <h2>To the Love of My Life</h2>
+    <p class="message">
+        Lily, every moment with you feels like magic. I am so grateful for your love and the joy you bring into my life.
+        I wanted to create something special to show how much you mean to me. <span class="heart-icon">❤️</span>
+    </p>
+    <button class="cta-button" onclick="showMessage()">Click to See My Heart for You</button>
+
+    <div id="heartMessage" style="display: none; margin-top: 30px;">
+        <p style="font-size: 1.3em; color: #e91e63;">
+            You are my everything, Lily. I love you more than words can express. Happy Valentine’s Day! 💖
+        </p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Fares & Lily | Always & Forever</p>
+</footer>
+
+<script>
+    function showMessage() {
+        document.getElementById('heartMessage').style.display = 'block';
+    }
+</script>
+
+</body>
+</html>
